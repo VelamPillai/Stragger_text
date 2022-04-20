@@ -34,6 +34,7 @@ p {
   font-size: 0.8rem;
   border-radius: 25px;
   font-weight: bold;
+  width: fit-content;
     /* giving sliding effect on text */
   transform: translateX(-45px);
   visibility: hidden;
@@ -44,10 +45,10 @@ p#para1 {
   transition: all 0.1s;
 }
 p#para2 {
-  transition: all 0.2s ease 0.1s;
+  transition: all 0.1s ease 0.1s;
 }
 p#para3 {
-  transition: all 0.3s ease-in 0.2s;
+  transition: all 0.1s ease-in 0.2s;
 }
 /* hover */
 div.container:hover p#para1,
