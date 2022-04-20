@@ -1,0 +1,70 @@
+:root{
+    font-family: sans-serif;
+    font-size: 18px;
+    --background-yellow:rgba(275, 275, 205);
+    --header-background:rgba(275, 275, 205, 0.9);
+}
+ 
+/* - rgb(20, 20, 20);
+
+- rgba(275, 275, 275, 0.7); */
+
+body{
+    background-color:var(--background-yellow); 
+    z-index:9999;
+}
+
+div.container{
+    width:25%;
+    height:50vh;
+    margin:100px auto;
+    padding:2rem;
+    position:relative;
+    
+    background: url("img/pug-life.jpg") no-repeat center/cover;
+    
+}
+h1{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    background-color:var(--header-background);
+    border-radius: 10px;;
+    padding: 5px;
+}
+
+p{
+    background-color: rgba(275, 275, 275, 0.7); 
+    padding: 5px;
+    font-size: .8rem;
+    border-radius: 25px;
+    width: fit-content;
+    font-weight: bold;
+    margin-bottom: .25px;
+    /* giving sliding effect on text */
+    transform: translateX(-45px); 
+    visibility: hidden;
+    opacity: 0;   
+    
+   
+}
+
+p#para1{  
+    transition:all 0.1s ;  
+   
+}
+p#para2{    
+    transition:all 0.2s ease .1s; 
+    }
+    p#para3{        
+        transition:all 0.3s ease-in .2s; 
+    }  
+    
+
+div.container:hover p#para1,
+div.container:hover p#para2,
+div.container:hover p#para3
+{
+    visibility: visible; 
+    opacity:1;
+    transform: translateX(5px);
+}
